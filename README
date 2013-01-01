@@ -1,6 +1,6 @@
 Installation and configuration of a bitlbee server (http://www.bitlbee.org) using puppet
 
-The package bitlbee and bitlbee-devel (available on the yum epel repository and Debian ... repository) will be installed.
+The packages bitlbee and bitlbee-devel (available on the yum epel repository) will be installed. Make sure that a repository which contains those packages is enabled on your system.
 
 Using the parameters
 

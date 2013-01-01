@@ -11,8 +11,6 @@ class bitlbee (
   $location      = $bitlbee::params::location,
 ) inherits bitlbee::params {
 
-  motd::register { 'bitlbee': }
-
   include ::bitlbee::install
   include ::bitlbee::config
   include ::bitlbee::service
