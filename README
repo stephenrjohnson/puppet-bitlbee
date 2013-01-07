@@ -27,6 +27,8 @@ in the puppet syntax will start the bitlbee server with following motd:
 
   $CHATHOSTNAME bitlbee (%v) located at $LOCATION.
 
+Implemented motd usage. When using the motd module from https://github.com/ripienaar/puppet-concat set the motd variable to true.
+
 Tested on CentOS 6
 
 == Example for node.pp manifest: ==
@@ -38,7 +40,8 @@ node 'HOSTNAME' {
       authmode     => 'X',
       authpassword => 'md5hash',
       chathostname => 'NAME',
-      location     => 'LOCATION'
+      location     => 'LOCATION',
+      motd         => true/false
     ;
   }
 }

@@ -10,4 +10,5 @@ class bitlbee::params {
   $authpassword   = undef
   $chathostname   = $::hostname
   $location       = 'this server location'
+  $motd           = false
 }

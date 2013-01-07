@@ -8,8 +8,13 @@ class bitlbee (
   $authmode     = $bitlbee::params::authmode,
   $authpassword = $bitlbee::params::authpassword,
   $chathostname = $bitlbee::params::chathostname,
-  $location      = $bitlbee::params::location,
+  $location     = $bitlbee::params::location,
+  $motd         = $bitlbee::params::motd,
 ) inherits bitlbee::params {
+
+  if $motd {
+    motd::register{'bitlbee':}
+  }
 
   include ::bitlbee::install
   include ::bitlbee::config
