@@ -12,5 +12,4 @@ class bitlbee::config {
     content => template('bitlbee/motd.txt.erb'),
     notify  => Exec['bitlbee']
   }
-
 }

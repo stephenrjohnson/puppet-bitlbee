@@ -11,4 +11,5 @@ class bitlbee::params {
   $chathostname   = $::hostname
   $location       = 'this server location'
   $motd           = false
+  $user           = 'bitlbee'
 }
