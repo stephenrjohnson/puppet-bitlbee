@@ -4,10 +4,9 @@ The packages bitlbee and bitlbee-devel (available on the yum epel repository) wi
 
 Using the parameters
 
-  -I  Classic/InetD mode. (Default)
-  -D  Daemon mode. (one process serves all)
+  -I  Classic/InetD mode.
+  -D  Daemon mode. (one process serves all)(Default)
   -F  Forking daemon. (one process per client)
-  -p  Port number to listen on. (Default: 6667)
 
 and configuration settings:
 
