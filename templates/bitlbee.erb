@@ -66,6 +66,15 @@ case "$1" in
         d_stop
         echo "."
         ;;
+        status)
+          pgrep bitlbee > /dev/null
+          if [ $? -eq 1 ]; then
+            echo "Not running"
+            exit 1;
+          else
+            echo "Running"
+          fi
+        ;;
   #reload)
         #
         #       No reload target, but there's a REHASH command which we
@@ -80,7 +89,7 @@ case "$1" in
         echo "."
         ;;
   *)
-        echo "Usage: $SCRIPTNAME {start|stop|restart|force-reload}" >&2
+        echo "Usage: $SCRIPTNAME {start|stop|restart|force-reload|status}" >&2
         exit 1
         ;;
 esac
