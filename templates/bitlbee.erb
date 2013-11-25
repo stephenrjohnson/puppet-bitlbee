@@ -23,7 +23,7 @@ SCRIPTNAME=/etc/init.d/$NAME
 [ -x $DAEMON ] || exit 0
 
 # Default value
-BITLBEE_PORT= <%= scope.lookupvar('bitlbee::port') %>
+BITLBEE_PORT=<%= scope.lookupvar('bitlbee::port') %>
 BITLBEE_OPTS=-<%= scope.lookupvar('bitlbee::mode') %>
 
 # Read config file if it is present.
